@@ -102,7 +102,7 @@ Buttons provide these events:
 Any number of actions can be attached to events. Actions are enumerated in order of appearance.
 
 Example:
-```
+```yaml
   - type: Button
     rect: [327, 52, 46, 32]
     font_size: 14
