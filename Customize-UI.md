@@ -34,6 +34,8 @@ UI panels can be expensive.
 
 - `elements` - the UI elements that will be drawn and may be interacted with
 
+Elements are drawn in order of appearance, so make sure that your background `Panel` comes before your `Label` or `Button`.
+
 # Element Types
 
 ## Panel
