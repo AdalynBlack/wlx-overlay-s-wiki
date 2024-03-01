@@ -13,6 +13,8 @@ These are required in all cases:
 ### Feature `openvr`
 Enable this if you plan on using SteamVR
 
+Warning: building without the dependencies will succeed, but the binary won't execute due to `libopenvr_api.so: cannot open shared object file`. In this case, install the dependencies correctly and re-build.
+
 Dependencies:
 - Arch: `openvr`
 - Ubuntu: `libopenvr-dev libopenvr-api1`
