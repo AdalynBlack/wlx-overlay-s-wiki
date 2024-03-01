@@ -18,7 +18,7 @@ wget https://github.com/galister/wlx-overlay-s/raw/main/src/res/settings.yaml
 
 ### Add a custom UI window of your own
 
-Simply create any Yaml file in `~/.config/wlxoverlay` with the correct format. You will be able to spawn it using the `Window` type `Button` placed on an existing UI panel, such as the watch or settings.
+Simply create any Yaml file in `~/.config/wlxoverlay` with the correct format. You will be able to spawn it using the `ShowUi` type `Button` placed on an existing UI panel, such as the watch or settings.
 
 # Before you begin - Performance considerations
 
