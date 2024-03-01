@@ -50,3 +50,18 @@ openOverlayCount (int)
 ```
 
 Dependencies: None
+
+# Execute the build
+
+```bash
+# Build with all features:
+cargo build --release
+
+# Build for X11+SteamVR
+cargo build --release --no-default-features --features=x11,openvr
+
+# Build for Wayland+Monado
+cargo build --release --no-default-features --features=wayland,openxr
+```
+
+A single executable will be placed at `target/release/wlx-overlay-s`.
