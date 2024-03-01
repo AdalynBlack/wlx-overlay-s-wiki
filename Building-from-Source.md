@@ -53,8 +53,9 @@ Dependencies: None
 
 # Execute the build
 
+Here are some examples you can do:
 ```bash
-# Build with all features:
+# Build with all features
 cargo build --release
 
 # Build for X11+SteamVR
