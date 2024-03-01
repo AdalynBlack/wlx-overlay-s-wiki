@@ -3,6 +3,8 @@ WlxOverlay-S can be built thicker or thinner, depending on your needs. The use o
 Help extend this wiki by providing packages for additional distros!
 
 ## Base dependencies
+Using [Rustup](https://rustup.rs/) is recommended.
+
 These are required in all cases:
 - Arch: `base-devel cmake libxkbcommon fontconfig dbus alsa-lib`
 - Ubuntu: `build-essential pkg-config cmake libxkbcommon-dev fontconfig libfontconfig-dev libdbus-1-dev libasound2-dev`
