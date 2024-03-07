@@ -7,7 +7,7 @@ Using [Rustup](https://rustup.rs/) is recommended.
 
 These are required in all cases:
 - Arch: `base-devel cmake libxkbcommon fontconfig dbus alsa-lib python3`
-- Ubuntu: `build-essential pkg-config cmake libxkbcommon-dev fontconfig libfontconfig-dev libdbus-1-dev libasound2-dev python3`
+- Ubuntu: `build-essential pkg-config cmake libstdc++-12-dev libxkbcommon-dev fontconfig libfontconfig-dev libdbus-1-dev libasound2-dev python3`
 
 ## Available features
 ### Feature `openvr`
