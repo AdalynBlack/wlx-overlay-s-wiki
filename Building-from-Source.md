@@ -5,6 +5,8 @@ Help extend this wiki by providing packages for additional distros!
 ## Base dependencies
 Using [Rustup](https://rustup.rs/) is recommended.
 
+Ensure `rustc` is up to date: `rustup update stable`
+
 These are required in all cases:
 - Arch: `base-devel cmake libxkbcommon fontconfig dbus alsa-lib python3`
 - Ubuntu: `build-essential pkg-config cmake libstdc++-12-dev libxkbcommon-dev fontconfig libfontconfig-dev libdbus-1-dev libasound2-dev python3`
