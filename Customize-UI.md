@@ -79,6 +79,13 @@ Executes a command every `interval` seconds
     command: ["echo", "hello world" ]
     interval: 0.5
 ```
+#### Ipd Label
+
+Displays the current IPD in millimeters with 1 decimal precision
+
+```yaml
+    source: Ipd
+```
 
 #### Internal Use
 
