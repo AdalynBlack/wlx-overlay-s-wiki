@@ -20,6 +20,16 @@ wget https://github.com/galister/wlx-overlay-s/raw/main/src/res/settings.yaml
 
 Simply create any Yaml file in `~/.config/wlxoverlay` with the correct format. You will be able to spawn it using the `ShowUi` type `Button` placed on an existing UI panel, such as the watch or settings.
 
+### Change the Primary Font
+
+WlxOverlay-S uses one primary font for optimal resource usage. This font can be changed via conf.d.
+
+```bash
+echo 'primary_font: "JetBrains Mono:style=Bold"' > ~/.config/wlxoverlay/conf.d/font.yaml
+```
+
+The setting takes the same pattern that `fc-match` uses. Do not include font size.
+
 # Before you begin - Performance considerations
 
 UI panels can be expensive.
