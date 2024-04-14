@@ -27,6 +27,19 @@ UI panels can be expensive.
 - Pick 2-3 font sizes and use those same sizes across your panels. Loading additional font sizes will increase VRAM usage.
 - Compositing is not a simple task. It often makes sense to create one larger panel instead of many smaller ones (sacrifice VRAM in exchange for lighter CPU load).
 
+# Desktop Preview
+
+There is a preview window that can be used for UI development.
+
+To edit `~/.config/wlxoverlay/watch.yaml`:
+```bash
+cargo run --features=uidev -- --uidev=watch
+```
+
+Once launched, the preview will refresh automatically when changes are made to the file.
+
+The preview is currently non-interactive and won't react to mouse or keyboard input.
+
 # Basic UI Settings
 
 - `size` - render resolution of the panel. after changing this, you would need to to re-adjust the placement and sizes of elements. 
