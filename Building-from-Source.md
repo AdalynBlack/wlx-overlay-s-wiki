@@ -42,6 +42,11 @@ Dependencies:
 - Arch: `libx11 libxext libxrandr`
 - Ubuntu: `libx11-6 libxext6 libxrandr2 libx11-dev libxext-dev libxrandr-dev`
 
+### Feature `no-dmabuf`
+Disables DMA-Buf support completely. Useful if your driver doesn't support the device extensions required.
+
+Dependencies: None
+
 ### Feature `osc`
 Enable this if you want XSO-compatible OSC parameters in VRChat
 
