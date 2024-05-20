@@ -22,7 +22,7 @@ Dependencies:
 - Ubuntu: `libopenvr-dev libopenvr-api1`
 
 ### Feature `openxr`
-Enable this if you plan on using Monado
+Enable this if you plan on using Monado or WiVRn
 
 Dependencies:
 - Arch: `openxr`
