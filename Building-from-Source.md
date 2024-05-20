@@ -45,6 +45,8 @@ Dependencies:
 ### Feature `no-dmabuf`
 Disables DMA-Buf support completely. Useful if your driver doesn't support the device extensions required.
 
+Has no effect on X11 (X11 does not use DMA-Buf either way).
+
 Dependencies: None
 
 ### Feature `osc`
