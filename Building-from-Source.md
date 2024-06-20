@@ -32,8 +32,7 @@ Dependencies:
 Enable this if you're on a Wayland desktop
 
 Dependencies:
-- Arch: `libpipewire clang`
-- Ubuntu: `libpipewire-0.3-0 libpipewire-0.3-dev libspa-0.2-dev clang`
+- Feature `pipewire` (see below)
 
 ### Feature `x11`
 Enable this if you're on X11
@@ -42,10 +41,12 @@ Dependencies:
 - Arch: `libx11 libxext libxrandr`
 - Ubuntu: `libx11-6 libxext6 libxrandr2 libx11-dev libxext-dev libxrandr-dev`
 
-### Feature `no-dmabuf`
-Disables DMA-Buf support completely. Useful if your driver doesn't support the device extensions required.
+### Feature `pipewire`
+Add PipeWire capture support. Works on Wayland, as well as X11 with picom only.
 
-Has no effect on X11 (X11 does not use DMA-Buf either way).
+Dependencies:
+- Arch: `libpipewire clang`
+- Ubuntu: `libpipewire-0.3-0 libpipewire-0.3-dev libspa-0.2-dev clang`
 
 Dependencies: None
 
