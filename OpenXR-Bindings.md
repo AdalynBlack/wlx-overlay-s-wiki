@@ -7,3 +7,5 @@ Place [openxr_actions.json5](https://github.com/galister/wlx-overlay-s/blob/main
 ```bash
 wget -O ~/.config/wlxoverlay/openxr_actions.json5 https://github.com/galister/wlx-overlay-s/raw/main/src/backend/openxr/openxr_actions.json5
 ```
+
+To see what bindings are available for each controller type, search for the profile in [the OpenXR specification](https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html).
