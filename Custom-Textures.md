@@ -6,7 +6,21 @@ DDS is a container format for GPU-native textures. The image data is ready to be
 
 The image data of a DDS file can use various compression methods, with some methods focusing on specific use cases.
 
-## Convert standard picture to DDS using Texpresso
+## Recommended formats
+
+These formats are generally available on all modern desktop+laptop GPUs. For ARM SoC's and such, you may need to do your own research.
+
+Some of the common compression formats and their use cases:
+ - `BC1`: When low VRAM use is desired. No transparency. (aka DXT1)
+ - `BC3`: When transparency and/or fast compression times are desired. (aka DXT5)
+ - `BC7`: When transparency and/or high quality is desired.
+
+`BC7` is recommended for skyboxes, as it shows less banding artifacts.
+
+
+## Convert standard picture to DDS: Texpresso
+
+Texpresso does not support `BC7`, so if you're working on a skybox, try Compressonator instead!
 
 [Texpresso](https://github.com/jansol/texpresso) is available via Cargo:
 ```bash
@@ -18,9 +32,15 @@ Usage example:
 texpresso compress --format BC3 path/to/image.png
 ```
 
-The resulting .dds file can then be used with WlxOverlay-S.
+The resulting .dds file will be placed in your working directory.
 
-## Recommended Formats:
- - `BC1`: RGB with no transparency
- - `BC3`: Has transparency, but takes twice the memory as BC1
- - `BC7`: Same characteristics as BC3, but higher quality (Not supported by Texpresso)
+## Convert standard picture to DDS: Compressonator
+
+Compressonator is a set of open-source graphics utilities by AMD.
+
+[Compressonator Website](https://gpuopen.com/compressonator/)・[Download Compressonator](https://github.com/GPUOpen-Tools/Compressonator/releases)
+
+Example usage:
+```bash
+compressonatorcli -nomipmap -fd BC7 ~/Downloads/table_mountain_2_puresky.png ~/.config/wlxoverlay/table_mountain_2.dds
+```
