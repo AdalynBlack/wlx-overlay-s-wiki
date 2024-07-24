@@ -4,7 +4,7 @@ Custom textures are accepted in the form of DDS files.
 
 DDS is a container format for GPU-native textures. The image data is ready to be uploaded to the GPU.
 
-The image data of a DDS file can use various compression methods, with some methods focusing on specific use cases.
+The image data of a DDS file can use various raw and compressed formats, with some of these focusing on specific use cases.
 
 ## Recommended formats
 
