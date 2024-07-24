@@ -2,6 +2,8 @@ WlxOverlay-S comes with a skybox for OpenXR.
 
 # Changing the Skybox
 
+We are only allowed to include pieces with specific licenses in the git repo, but feel free to procure your own skybox materiel for personal use!
+
 A custom texture may be set via `~/.config/wlxoverlay/conf.d`
 ```yaml
 skybox_texture = starry-sky.dds
